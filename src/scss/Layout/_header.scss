@@ -1,0 +1,96 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	overflow: hidden;
+
+	/* LOGO ============================== */
+	h1 {
+		color: #444;
+		display: inline-block;
+		font-size: 40px;
+	}
+
+	p {
+		color: $greyColorLight;
+		margin-top: -5px;
+	}
+
+	// Responsive
+	.logo {
+		@media #{$maxMobile} {
+			text-align: center;
+			margin-bottom: 20px;
+
+			h1 {
+				font-size: 50px;
+				letter-spacing: 2px;
+			}
+
+			p {
+				font-size: 20px;
+				margin-bottom: 100px;
+			}
+		}
+
+		@media #{$minSmall} {
+			text-align: center;
+			margin-bottom: 20px;
+
+			h1 {
+				font-size: 50px;
+				letter-spacing: 2px;
+			}
+
+			p {
+				font-size: 20px;
+				margin-bottom: 100px;
+			}
+		}
+	}
+
+	/* NAVBAR =================================================== */
+	nav {
+		background-color: $redColor;
+		border-radius: 50px;
+		width: 525px;
+		height: 60px;
+		padding-left: 25px;
+		margin-top: -78px;
+		display: flex;
+		justify-content: start;
+		float: right;
+		box-shadow: rgba(130, 121, 121, 0.5) 0px 0px 20px 0px;
+
+		// Responsive
+		// @media #{$mobileScreen} {
+		// 	margin-top: 20px;
+		// 	width: 463px;
+		// }
+
+		// @media #{$smallScreen} {
+		// 	margin-top: 20px;
+		// 	margin-right: 20px;
+		// }
+
+		a {
+			color: white;
+			font-size: 19px;
+			padding: 17px 25px;
+			text-decoration: none;
+			cursor: $pointer;
+			transition: .4s;
+
+			// Hover
+			&:hover {
+				background-color: $greyColorDark;
+			}
+
+			// Active
+			&:active {
+				transform: scale(.75);
+			}
+		}
+	}
+}

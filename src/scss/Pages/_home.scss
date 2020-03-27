@@ -1,0 +1,24 @@
+// .product {
+// 	position: relative;
+// 	width: 250px;
+// 	height: 300px;
+// 	margin: 50px;
+// 	border-radius: 5px;
+// 	box-shadow: rgba(100, 97, 97, 0.7) 0px 5px 12px 3px;
+
+// 	img {
+// 		border-radius: 5px;
+// 	}
+
+// 	// Hover
+// 	&:hover .overlay {
+// 		opacity: 1;
+// 	}
+
+// 	// Overlay
+// 	.overlay {
+// 		@include overlay;
+// 		cursor: url(/Assets/Images/Cursors/click.png), auto;
+// 		border-radius: 5px;
+// 	}
+// }

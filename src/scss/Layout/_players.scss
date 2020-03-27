@@ -1,0 +1,62 @@
+.players {
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+
+		h1 {
+			@include header;
+		}
+	}
+
+	.person {
+		// display: inline-grid;
+		// margin: 4px;
+		float: left;
+		width: (100%/5);
+		margin-bottom: 150px;
+
+		img {
+			width: 221px;
+			border-radius: 5px;
+			transition: .2s;
+			cursor: $pointer;
+
+			// Hover
+			&:hover {
+				// filter: drop-shadow(8px 8px 10px gray);
+				filter: sepia(100%);
+				transform: scale(1.1);
+			}
+
+			// Hover
+			&:active {
+				transform: scale(.75);
+			}
+		}
+
+		h3 {
+			color: $greyColorDark;
+			letter-spacing: 2px;
+
+			span {
+				color: $greyColorLight;
+				font-size: 16px;
+			}
+		}
+
+		p {
+			color: $greyColorLight;
+			width: 222px;
+			line-height: 24px;
+			margin-top: -5px;
+		}
+
+		a {
+			color: $redColor;
+			text-decoration: none;
+			cursor: $pointer;
+		}
+	}
+}

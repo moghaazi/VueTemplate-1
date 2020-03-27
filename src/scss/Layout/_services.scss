@@ -1,0 +1,40 @@
+.services {
+	margin-bottom: 150px;
+
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+
+		h1 {
+			@include header;
+		}
+	}
+
+	.our-services {
+		display: flex;
+		justify-content: space-around;
+
+		img {
+			width: 100px;
+		}
+
+		h1 {
+			color: $greyColorDark;
+			letter-spacing: 2px;
+		}
+
+		p {
+			color: $greyColorLight;
+			width: 265px;
+			line-height: 24px;
+		}
+
+		a {
+			color: $redColor;
+			text-decoration: none;
+			cursor: $pointer;
+		}
+	}
+}

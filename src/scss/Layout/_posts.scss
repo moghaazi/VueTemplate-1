@@ -1,0 +1,56 @@
+.posts {
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+
+		h1 {
+			@include header;
+		}
+	}
+
+	.our-posts {
+		display: flex;
+		justify-content: space-between;
+
+		/* MAIN POST =====================================*/
+		.post {
+			position: relative;
+
+			&:hover .overlay {
+				opacity: 1;
+			}
+
+			/* OVERLAY ================== */
+			.overlay {
+				@include overlay;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				img {
+					width: 50px;
+				}
+			}
+
+			/* IMAGE ==================== */
+			img {
+				border-radius: 5px;
+				cursor: $pointer;
+				transition: .2s;
+
+				// Hover
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				// Active
+				&:active {
+					transform: scale(.75);
+				}
+			}
+		}
+	}
+}
